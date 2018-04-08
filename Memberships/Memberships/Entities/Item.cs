@@ -43,7 +43,7 @@ namespace Memberships.Entities
         }
 
         public int ProductId { get; set; }
-        public int ItemId { get; set; }
+        public int ItemId { get; set; } //TODO: skal rettes til ItemTypeId
         public int SectionId { get; set; }
         public int PartId { get; set; }
         public int IsFree { get; set; }
