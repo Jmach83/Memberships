@@ -26,12 +26,14 @@ namespace Memberships.Entities
         public string Url { get; set; }
 
         [MaxLength(1024)]
+        [DisplayName("Image Url")]
         public string ImageUrl { get; set; }
 
         [AllowHtml]
         public string HTML { get; set; }
 
         [DefaultValue(0)]
+        [DisplayName("Wait Days")]
         public int WaitDays { get; set; }
 
         public string HTMLShort
