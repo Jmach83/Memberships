@@ -17,12 +17,18 @@ namespace Memberships.Areas.Admin.Extensions
             var texts = await db.ProductLinkTexts.ToListAsync();
             var types = await db.ProductTypes.ToListAsync();
 
-            return from p in products select new ProductModel
-            {
-                Id = p.Id,
-                Title = p.Title,
-
-            }
+            return from p in products
+                select new ProductModel
+                {
+                    Id = p.Id,
+                    Title = p.Title,
+                    Description = p.Description,
+                    ImageUrl = p.ImageUrl,
+                    ProductLinkTextId = p.ProductLinkTextId,
+                    ProductTypeIs = p.ProductTypeIs,
+                    ProductLinkTexts = texts,
+                    ProductTypes = types
+                };
         }
     }
 }
