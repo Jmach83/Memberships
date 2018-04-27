@@ -26,9 +26,9 @@ namespace Memberships.Areas.Admin.Models
         public int ProductLinkTextId { get; set; }
 
         public int ProductTypeIs { get; set; }
-
+        [DisplayName("Product Link Texts")]
         public ICollection<ProductLinkText> ProductLinkTexts { get; set; }
-
+        [DisplayName("Product Type")]
         public ICollection<ProductType> ProductTypes { get; set; }
 
         public string ProductType
