@@ -43,7 +43,7 @@ namespace Memberships.Areas.Admin.Models
         {
             get
             {
-                return ProductLinkTexts == null || ProductLinkTexts.Count.Equals(0) ? string.Empty : ProductTypes.First(pt => pt.Id.Equals(ProductLinkTextId)).Title;
+                return ProductLinkTexts == null || ProductLinkTexts.Count.Equals(0) ? string.Empty : ProductLinkTexts.First(pt => pt.Id.Equals(ProductLinkTextId)).Title;
             }
         }
     }
