@@ -197,6 +197,7 @@
     <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SectionController.cs" />
     <Compile Include="Areas\Admin\Controllers\ItemController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SubsripstionController.cs" />
     <Compile Include="Areas\Admin\Extensions\ConversionExtension.cs" />
     <Compile Include="Areas\Admin\Models\ProductModel.cs" />
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
@@ -309,6 +310,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Admin\Views\Subsripstion\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Subsripstion\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Subsripstion\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Subsripstion\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Subsripstion\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
