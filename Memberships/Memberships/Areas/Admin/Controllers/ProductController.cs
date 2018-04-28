@@ -83,7 +83,10 @@ namespace Memberships.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(product);
+            var prod = new List<Product>();
+            prod.Add(product);
+            var productModel = await prod.Convert(db);
+            return View(productModel.First());
         }
 
         // POST: Admin/Product/Edit/5
