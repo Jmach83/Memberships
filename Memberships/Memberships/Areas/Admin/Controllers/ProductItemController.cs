@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Memberships.Areas.Admin.Extensions;
 using Memberships.Areas.Admin.Models;
 using Memberships.Entities;
 using Memberships.Models;
@@ -20,7 +21,7 @@ namespace Memberships.Areas.Admin.Controllers
         // GET: Admin/ProductItem
         public async Task<ActionResult> Index()
         {
-            return View(await db.ProductItems.ToListAsync());
+            return View(await db.ProductItems.Convert(db));
         }
 
         // GET: Admin/ProductItem/Details/5

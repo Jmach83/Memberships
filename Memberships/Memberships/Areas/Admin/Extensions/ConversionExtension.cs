@@ -57,5 +57,19 @@ namespace Memberships.Areas.Admin.Extensions
 
             return model;
         }
+
+        public static async Task<IEnumerable<ProductItemModel>> Convert(this IQueryable<ProductItem> productsItems, ApplicationDbContext db)
+        {
+            if (productsItems.Count().Equals(0)) return new List<ProductItemModel>();
+
+            return await( from pi in productsItems
+                select new ProductItemModel()
+                {
+                    ItemId = pi.ItemId,
+                    ProductId = pi.ProductId,
+                    ItemTitle = db.Items.FirstOrDefault(i => i.Id.Equals(pi.ItemId)).Title,
+                    ProductTitle = db.Products.FirstOrDefault(p => p.Id.Equals(pi.ProductId)).Title
+                }).ToListAsync();
+        }
     }
 }
