@@ -193,6 +193,7 @@
     <Compile Include="Areas\Admin\Controllers\ItemTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductItemController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductLinkTextController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SectionController.cs" />
@@ -315,6 +316,11 @@
     <Content Include="Areas\Admin\Views\Subsripstion\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Subsripstion\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Subsripstion\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductItem\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductItem\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductItem\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductItem\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductItem\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
